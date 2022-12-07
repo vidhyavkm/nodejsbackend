@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <style>
+      .email {
+        background: #dd7ff0;
+      }
+      .header {
+        padding: 5px 0px 5px 0px;
+        text-align: center;
+      }
+      .body-part {
+        padding: 5px;
+        font-family: "DM Sans", sans-serif;
+        padding: 2px;
+        color: #555a8f;
+        background: #ffffff;
+      }
+
+      .body-text {
+        color: #555a8f;
+        padding: 25px 0px 0px 5px;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 5px 0px 5px 0px;
+      }
+
+      table,
+      td,
+      th {
+        border: 2px solid black;
+      }
+
+      th,
+      td {
+        padding: 10px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 60%;
+      }
+      .blue-text {
+        color: #1d53f5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="email">
+      <header class="header">
+        <h2>Portfolio Email</h2>
+      </header>
+      <div class="body-part">
+        <div class="body-text">
+          Dear Anand , <br />
+          Someone visited your website and tried to contact you. Here are their
+          details below.<br /><br />
+          <strong>Name:</strong> <%= visiterName %><br />
+          <strong>Email:</strong> <%= visiterMail %><br />
+          <strong>Message:</strong> <%= message %>
+
+          <br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
